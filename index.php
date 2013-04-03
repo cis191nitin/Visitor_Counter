@@ -1,3 +1,4 @@
+<?php $count = exec("python ~/html/cgi-bin/display_count.py", $output); ?>
 <h1> Number of Visitors to this Point: </h1>
 <h3> <? print($count) ?> </h3>
 <?php exec("python ~/html/cgi-bin/update_count.py", $output); ?>
